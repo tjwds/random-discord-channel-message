@@ -1,12 +1,15 @@
 {
   "name": "random-discord-channel-message",
   "version": "1.0.0",
-  "description": "",
+  "description": "Get a random message from a discord channel",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Joe Woods <code@joewoods.dev>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
 }
