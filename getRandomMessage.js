@@ -33,7 +33,10 @@ const getRandomMessage = () =>
       const messages = collection.array();
       const targetNumber = randomNumber(messages.length);
       discordClient.destroy();
-      resolve(messages[targetNumber].content);
+      const messageData = messages[targetNumber];
+      resolve(`${targetNumber + 1} of ${messages.length + 1}:
+${new Date(messageData.createdTimestamp).toLocaleString()}
+${messageData.content}`);
     });
   });
 
